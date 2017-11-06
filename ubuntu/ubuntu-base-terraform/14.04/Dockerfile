@@ -32,7 +32,7 @@ RUN wget "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
     && pip install awscli==1.11.25 \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN curl -o terraform.zip https://releases.hashicorp.com/terraform/0.10.4/terraform_0.10.4_linux_amd64.zip \
+RUN curl -o terraform.zip https://releases.hashicorp.com/terraform/0.10.8/terraform_0.10.8_linux_amd64.zip \
     && unzip -d /usr/local/bin terraform.zip \
     && pip install ansi2html \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
